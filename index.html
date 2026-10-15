@@ -5513,7 +5513,7 @@ NORMAS.enfermedades = { obj: 'Que la persona trabajadora reconozca los efectos e
 // ===== Inducción de Prevención de Riesgos (IRL) · charla madre, obligatoria antes de todo · vigencia 18 meses =====
 var IND_REGLAMENTOS = {
   'Comercializadora OYM Center': 'https://drive.google.com/file/d/1JDsFFeyJh8T9p7ugqjbY5HkM772Joe2p/view',
-  'Ferretería OYM': 'https://drive.google.com/file/d/1JDsFFeyJh8T9p7ugqjbY5HkM772Joe2p/view' };
+  'Ferretería OYM': 'https://drive.google.com/file/d/1R5nlkFwLjdU4xS3lXTeqFxSynVknxJw5/view' };
 var IND_FORMULARIO = 'https://docs.google.com/forms/d/1FuktXIjp5ooPcZZB_IIYNkHpmwu9VLNhfeR3TKlHyBw/viewform';
 var IND_MESES = 18;
 var IND_TRANSV = '<li><b>Para todos:</b> caídas al mismo nivel, atropello en patio y estacionamiento, sismo e incendio, accidente de trayecto y agresiones de terceros. <span class="ctrl">✅ Control:</span> pasillos libres, rutas peatonales, conocer la vía de evacuación y el punto de encuentro, respetar el tránsito y pedir ayuda ante una agresión.</li>';
@@ -6622,7 +6622,7 @@ const ORDEN_CC = ['induccion', 'autocuidado', 'peligros', 'transito', 'cargas', 
   'sala_ventas', 'atencion_publico', 'asaltos', 'pvd', 'oficina'];
 TOPICS.forEach(t => { if (!t.sec) t.sec = 'todos'; });
 TOPICS.sort((a, b) => ((ORDEN_CC.indexOf(a.id) + 1) || 99) - ((ORDEN_CC.indexOf(b.id) + 1) || 99));
-const RAZONES = { 'Comercializadora OYM Center': '76.866.551-6', 'Ferretería OYM': '' };
+const RAZONES = { 'Comercializadora OYM Center': '76.866.551-6', 'Ferretería OYM': '77.888.222-1' };
 const razonTxt = r => RAZONES[r] ? r + ' (RUT ' + RAZONES[r] + ')' : (r && r in RAZONES ? r : 'OYM Center');
 function filasEmpresa(D, TM) {
   const f = [['Empresa', razonTxt(D.empresa)]];
