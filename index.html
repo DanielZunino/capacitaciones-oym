@@ -6,9 +6,9 @@
 <title>Capacitaciones OYM Center</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
-:root { --dark:#0A2463; --dark2:#123282; --line:#2D4FA0; --yellow:#FFC20E; --red:#D7262B; --blue:#1565C0; --green:#2E7D32; --muted:#A8AEB5; --light:#F3F4F6; }
+:root { --dark:#053F18; --dark2:#0A5A25; --line:#2F8A4C; --yellow:#8DC63F; --red:#E0301E; --blue:#1565C0; --green:#2E7D32; --muted:#A8AEB5; --light:#F3F4F6; }
 * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
-html,body { margin:0; background:linear-gradient(180deg,#0A2463 0%,#0039A6 60%,#0A2463 100%) fixed; background-color:var(--dark); color:#fff; font-family: Arial, Helvetica, sans-serif; }
+html,body { margin:0; background:linear-gradient(180deg,#053F18 0%,#0B7A35 60%,#053F18 100%) fixed; background-color:var(--dark); color:#fff; font-family: Arial, Helvetica, sans-serif; }
 .screen { display:none; min-height:100vh; min-height:100dvh; }
 .screen.on { display:flex; flex-direction:column; }
 .wrap { width:100%; max-width:560px; margin:0 auto; padding:22px 18px 30px; display:flex; flex-direction:column; gap:14px; flex:1; }
@@ -39,7 +39,7 @@ input[type=text]:focus { outline:none; border-color:var(--yellow); }
 .card h3 { margin:0; font-size:21px; line-height:1.2; }
 .card .tx { font-size:16px; line-height:1.5; color:#30363D; }
 .card ul { margin:0; padding-left:20px; } .card li { margin:3px 0; }
-.key { background:#FFF4CC; border-left:6px solid var(--yellow); border-radius:8px; padding:10px 12px; font-weight:bold; font-size:15.5px; color:#3A2F00; }
+.key { background:#EEF7E1; border-left:6px solid var(--yellow); border-radius:8px; padding:10px 12px; font-weight:bold; font-size:15.5px; color:#1E3A0C; }
 .step { color:var(--muted); font-size:13px; text-align:right; }
 /* quiz */
 .qtxt { font-size:19px; font-weight:bold; line-height:1.3; color:#fff; }
@@ -81,30 +81,30 @@ input[type=text]:focus { outline:none; border-color:var(--yellow); }
 .dsban { display:flex; align-items:stretch; background:#fff; color:var(--dark); border:3px solid var(--yellow); border-radius:18px; overflow:hidden; padding:0; cursor:pointer; text-align:left; font:inherit; }
 .dsban svg { width:42%; flex:none; height:auto; display:block; background:#E8EDF2; }
 .dsban .dt { padding:10px 12px; display:flex; flex-direction:column; gap:4px; justify-content:center; }
-.dsban .tag { color:#B07D00; font-size:10px; letter-spacing:2px; } .dsban b { font-size:16px; line-height:1.2; } .dsban small { color:#6B7280; font-size:12px; }
-.logoBar { margin-top:40px; display:flex; align-items:center; gap:14px; background:#fff; border-radius:18px; padding:10px 14px; border-bottom:5px solid #DC281D; }
-.logoBar img { height:64px; width:auto; } .logoBar span { color:#0039A6; font-weight:bold; font-size:13px; letter-spacing:2px; line-height:1.3; }
-.ruta { background:#fff; color:#1F2328; border-radius:18px; padding:14px 16px; display:flex; flex-direction:column; gap:8px; border-left:8px solid #DC281D; }
-.ruta .rq { font-size:15px; line-height:1.4; color:#30363D; } .ruta .rrow { display:flex; gap:8px; } .ruta input[type=text] { background:#F3F6FB; color:#1F2328; border-color:#C9D3E6; flex:1; }
-.ruta .btn.sm { width:auto; padding:12px 14px; font-size:15px; background:#DC281D; color:#fff; white-space:nowrap; }
+.dsban .tag { color:#4E7D1E; font-size:10px; letter-spacing:2px; } .dsban b { font-size:16px; line-height:1.2; } .dsban small { color:#6B7280; font-size:12px; }
+.logoBar { margin-top:40px; display:flex; align-items:center; gap:14px; background:#fff; border-radius:18px; padding:10px 14px; border-bottom:5px solid #E0301E; }
+.logoBar img { height:64px; width:auto; } .logoBar span { color:#0B7A35; font-weight:bold; font-size:13px; letter-spacing:2px; line-height:1.3; }
+.ruta { background:#fff; color:#1F2328; border-radius:18px; padding:14px 16px; display:flex; flex-direction:column; gap:8px; border-left:8px solid #E0301E; }
+.ruta .rq { font-size:15px; line-height:1.4; color:#30363D; } .ruta .rrow { display:flex; gap:8px; } .ruta input[type=text] { background:#F3F8F4; color:#1F2328; border-color:#C9DFCF; flex:1; }
+.ruta .btn.sm { width:auto; padding:12px 14px; font-size:15px; background:#E0301E; color:#fff; white-space:nowrap; }
 .ruta .rhi { font-size:20px; } .ruta .rcargo { color:#5A5F66; font-size:13px; }
-.ruta .rbar { height:12px; background:#E8EDF5; border-radius:8px; overflow:hidden; } .ruta .rbar i { display:block; height:100%; background:linear-gradient(90deg,#DC281D,#FFC20E,#2E7D32); border-radius:8px; transition:width .6s; }
-.ruta .rnum { font-size:14px; color:#0039A6; } .ruta .rchips { display:flex; flex-wrap:wrap; gap:6px; } .ruta .rchips span { color:#fff; font-size:11px; font-weight:bold; padding:4px 9px; border-radius:20px; }
-.lnk { background:none; border:0; color:#0039A6; text-decoration:underline; font-size:13px; align-self:flex-start; padding:0; cursor:pointer; }
+.ruta .rbar { height:12px; background:#E8F2EA; border-radius:8px; overflow:hidden; } .ruta .rbar i { display:block; height:100%; background:linear-gradient(90deg,#E0301E,#8DC63F,#2E7D32); border-radius:8px; transition:width .6s; }
+.ruta .rnum { font-size:14px; color:#0B7A35; } .ruta .rchips { display:flex; flex-wrap:wrap; gap:6px; } .ruta .rchips span { color:#fff; font-size:11px; font-weight:bold; padding:4px 9px; border-radius:20px; }
+.lnk { background:none; border:0; color:#0B7A35; text-decoration:underline; font-size:13px; align-self:flex-start; padding:0; cursor:pointer; }
 .seccion { border-radius:18px; overflow:hidden; background:rgba(255,255,255,.06); border:2px solid var(--sc); margin-bottom:12px; }
 .shead { width:100%; display:flex; align-items:center; gap:10px; background:var(--sc); color:#fff; border:0; padding:12px 14px; text-align:left; font:inherit; cursor:pointer; }
 .shead .sic { font-size:26px; } .shead .stt { flex:1; font-weight:bold; font-size:17px; line-height:1.2; } .shead small { display:block; font-weight:normal; font-size:12px; opacity:.9; margin-top:2px; }
-.shead .spill { font-size:10px; font-weight:bold; letter-spacing:1px; padding:4px 8px; border-radius:12px; background:rgba(255,255,255,.25); } .shead .spill.mia { background:#FFC20E; color:#1F2328; }
+.shead .spill { font-size:10px; font-weight:bold; letter-spacing:1px; padding:4px 8px; border-radius:12px; background:rgba(255,255,255,.25); } .shead .spill.mia { background:#8DC63F; color:#1F2328; }
 .shead .sarr { transition:transform .2s; } .seccion.open .sarr { transform:rotate(180deg); }
 .seccion .topics { display:none; padding:12px; } .seccion.open .topics { display:grid; }
 .tcard { position:relative; } .tcard .tb { position:absolute; top:8px; left:8px; z-index:2; font-size:11px; font-weight:bold; padding:4px 8px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.25); }
-.tb.ok { background:#2E7D32; color:#fff; } .tb.pend { background:#FFC20E; color:#1F2328; }
+.tb.ok { background:#2E7D32; color:#fff; } .tb.pend { background:#8DC63F; color:#1F2328; }
 
 .ruta .rsecs { display:flex; flex-direction:column; gap:6px; margin-top:2px; }
 .ruta .rsec { display:grid; grid-template-columns:22px 1fr 70px 34px; align-items:center; gap:8px; font-size:13px; color:#30363D; }
-.ruta .rsb { height:8px; background:#E8EDF5; border-radius:6px; overflow:hidden; } .ruta .rsb i { display:block; height:100%; border-radius:6px; }
-.ruta .rsn { text-align:right; font-weight:bold; color:#0039A6; }
-.ruta .btn.sig { background:#0039A6; color:#fff; font-size:15px; padding:12px 14px; text-align:left; }
+.ruta .rsb { height:8px; background:#E8F2EA; border-radius:6px; overflow:hidden; } .ruta .rsb i { display:block; height:100%; border-radius:6px; }
+.ruta .rsn { text-align:right; font-weight:bold; color:#0B7A35; }
+.ruta .btn.sig { background:#0B7A35; color:#fff; font-size:15px; padding:12px 14px; text-align:left; }
 .homeL, .homeR { display:flex; flex-direction:column; gap:14px; }
 @media (min-width: 1000px) {
   #s-home .wrap { max-width:1240px; display:grid; grid-template-columns:400px 1fr; gap:32px; align-items:start; padding-top:30px; }
@@ -136,10 +136,10 @@ input[type=text]:focus { outline:none; border-color:var(--yellow); }
 #guia.up { flex-direction:column-reverse; animation-name:gbob2; }
 @keyframes gbob { 0%,100% { transform:translate(-50%,0); } 50% { transform:translate(-50%,12px); } }
 @keyframes gbob2 { 0%,100% { transform:translate(-50%,0); } 50% { transform:translate(-50%,-12px); } }
-.oir { align-self:flex-start; background:#E3F2FD; color:var(--blue); border:0; border-radius:20px; padding:7px 14px; font-weight:bold; font-size:14px; cursor:pointer; }
+.oir { align-self:flex-start; background:#E6F4EA; color:var(--blue); border:0; border-radius:20px; padding:7px 14px; font-weight:bold; font-size:14px; cursor:pointer; }
 .rd { border-radius:5px; transition:background-color .35s, box-shadow .35s; }
-.rd.leyendo, li.rd.leyendo { background-color:#FFF4CC; box-shadow:0 0 0 3px #FFF4CC; }
-.key.rd.leyendo { background-color:#FFE48A; box-shadow:none; }
+.rd.leyendo, li.rd.leyendo { background-color:#EEF7E1; box-shadow:0 0 0 3px #EEF7E1; }
+.key.rd.leyendo { background-color:#CFE8A9; box-shadow:none; }
 .qtxt.leyendo { background-color:rgba(255,194,14,.18); box-shadow:0 0 0 6px rgba(255,194,14,.18); border-radius:8px; }
 .opt.leyendo { border-color:var(--yellow); }
 .fb.leyendo { box-shadow:0 0 0 3px rgba(255,194,14,.55); }
@@ -164,9 +164,9 @@ svg .an-d1 { animation-delay:.4s; } svg .an-d2 { animation-delay:.8s; } svg .an-
 .inicio { position:fixed; top:10px; left:10px; z-index:50; height:42px; padding:0 14px; border-radius:21px; border:0; background:rgba(43,48,55,.92); color:#fff; font-size:14px; font-weight:bold; cursor:pointer; display:none; }
 body.dentro .inicio { display:block; }
 body.dentro .wrap { padding-top:62px; }
-.vozav { display:none; background:#3D2F00; border:1px solid var(--yellow); border-radius:12px; padding:10px 12px; font-size:14px; line-height:1.4; color:#FFE082; }
+.vozav { display:none; background:#1E3A0C; border:1px solid var(--yellow); border-radius:12px; padding:10px 12px; font-size:14px; line-height:1.4; color:#CFE8A9; }
 .vozav a { color:#fff; font-weight:bold; }
-#vozBanner { position:fixed; left:10px; right:10px; bottom:12px; z-index:70; background:#2B2200; border:2px solid var(--yellow); border-radius:16px; padding:14px 16px 12px; color:#FFE082; box-shadow:0 8px 28px rgba(0,0,0,.55); max-width:540px; margin:0 auto; }
+#vozBanner { position:fixed; left:10px; right:10px; bottom:12px; z-index:70; background:#1E3A0C; border:2px solid var(--yellow); border-radius:16px; padding:14px 16px 12px; color:#CFE8A9; box-shadow:0 8px 28px rgba(0,0,0,.55); max-width:540px; margin:0 auto; }
 #vozBanner .btn { margin-top:4px; }
 body.conaviso .wrap { padding-bottom:250px; }
 #vozMenu { display:none; position:fixed; top:60px; right:10px; z-index:80; width:250px; background:#2B3037; border:1px solid var(--line); border-radius:16px; padding:10px; box-shadow:0 10px 30px rgba(0,0,0,.5); }
@@ -5699,7 +5699,7 @@ async function pantallaMonitor() {
       try { localStorage.setItem('oym_cap_pin', pin); } catch (e) {}
       $('mBody').innerHTML = `<div class="vok"><b>${r.nombre}</b>${r.cargo || ''}</div>
         <p style="text-align:center;margin-top:8px">Código de hoy · ${r.fecha}</p>
-        <div style="text-align:center;font:bold 72px Arial;letter-spacing:10px;color:#FFC20E">${r.codigo}</div>
+        <div style="text-align:center;font:bold 72px Arial;letter-spacing:10px;color:#8DC63F">${r.codigo}</div>
         <p style="font-size:14px">Dicta este código al inicio de la charla. Los trabajadores lo escriben en "Código de la charla". Así su diploma queda como <b style="color:#fff">presencial, dirigida por ${r.nombre}</b>. El código cambia cada día.</p>
         <button class="btn ghost" id="bOtro">Usar otra clave</button>`;
       $('bOtro').onclick = () => { pin = ''; try { localStorage.removeItem('oym_cap_pin'); } catch (e) {} pinta(''); };
@@ -5743,21 +5743,21 @@ function registroCanvas(D) {
   const t = D.topic, nm = NORMAS[t.id] || { obj:'', n:[] }, TM = textoModalidad(D);
   c.fillStyle = '#fff'; c.fillRect(0, 0, W, H * 2);
   // encabezado
-  c.fillStyle = '#1F2328'; c.fillRect(0, 0, W, 210);
-  c.fillStyle = '#FFC20E'; c.fillRect(0, 210, W, 10);
-  c.fillStyle = '#FFC20E'; c.font = `bold 26px ${sans}`; c.textAlign = 'left'; c.fillText('OYM CENTER  ·  PROGRAMA DE CAPACITACIÓN EN SEGURIDAD ' + D.year, L, 72);
+  c.fillStyle = '#053F18'; c.fillRect(0, 0, W, 210);
+  c.fillStyle = '#8DC63F'; c.fillRect(0, 210, W, 10);
+  c.fillStyle = '#8DC63F'; c.font = `bold 26px ${sans}`; c.textAlign = 'left'; c.fillText('OYM CENTER  ·  PROGRAMA DE CAPACITACIÓN EN SEGURIDAD ' + D.year, L, 72);
   c.fillStyle = '#fff'; c.font = `bold 60px ${sans}`; c.fillText(D.titulo, L, 140);
   c.fillStyle = '#C9CDD2'; c.font = `24px ${sans}`; c.fillText('Evidencia de actividad formativa en seguridad y salud en el trabajo (Ley 16.744 · DS 44/2023)', L, 182);
-  c.textAlign = 'right'; c.fillStyle = '#FFC20E'; c.font = `bold 26px "Courier New", monospace`; c.fillText(D.code, R, 72); c.textAlign = 'left';
+  c.textAlign = 'right'; c.fillStyle = '#8DC63F'; c.font = `bold 26px "Courier New", monospace`; c.fillText(D.code, R, 72); c.textAlign = 'left';
   let y = 270, pg = 0;
   const finPag = () => (pg + 1) * H - 130;
   const brk = need => { if (y + need <= finPag()) return; pg++; const top = pg * H;
-    c.fillStyle = '#1F2328'; c.fillRect(0, top, W, 80); c.fillStyle = '#FFC20E'; c.fillRect(0, top + 80, W, 6);
+    c.fillStyle = '#053F18'; c.fillRect(0, top, W, 80); c.fillStyle = '#8DC63F'; c.fillRect(0, top + 80, W, 6);
     c.fillStyle = '#fff'; c.font = `bold 26px ${sans}`; c.textAlign = 'left'; c.fillText(D.titulo + ' (continuación) · ' + t.title, L, top + 50);
-    c.textAlign = 'right'; c.fillStyle = '#FFC20E'; c.font = `bold 24px "Courier New", monospace`; c.fillText(D.code, R, top + 50); c.textAlign = 'left';
+    c.textAlign = 'right'; c.fillStyle = '#8DC63F'; c.font = `bold 24px "Courier New", monospace`; c.fillText(D.code, R, top + 50); c.textAlign = 'left';
     y = top + 140; };
   const wrap = (txt, x, maxW, lh, font, color) => { c.font = font; c.fillStyle = color; const words = String(txt).split(' '); let line = ''; for (const w of words) { const test = line ? line + ' ' + w : w; if (c.measureText(test).width > maxW && line) { c.fillText(line, x, y); y += lh; line = w; } else line = test; } if (line) { c.fillText(line, x, y); y += lh; } };
-  const section = (num, title) => { brk(140); y += 10; c.fillStyle = '#FFC20E'; c.fillRect(L, y - 26, 7, 34); c.fillStyle = '#1F2328'; c.font = `bold 28px ${sans}`; c.fillText(num + '. ' + title, L + 20, y); y += 16; c.fillStyle = '#E5E7EB'; c.fillRect(L, y, Wt, 2); y += 32; };
+  const section = (num, title) => { brk(140); y += 10; c.fillStyle = '#8DC63F'; c.fillRect(L, y - 26, 7, 34); c.fillStyle = '#1F2328'; c.font = `bold 28px ${sans}`; c.fillText(num + '. ' + title, L + 20, y); y += 16; c.fillStyle = '#E5E7EB'; c.fillRect(L, y, Wt, 2); y += 32; };
   // 1. datos
   section(1, 'Identificación de la actividad');
   const rows = [
@@ -5800,7 +5800,7 @@ function registroCanvas(D) {
   c.fillStyle = '#5A5F66'; c.font = `20px ${sans}`; c.fillText('Participante · RUT ' + D.rut, sx1 + lw / 2, ly + 64); c.fillText(TM.rolRelator + ' · ' + RELATOR.reg, sx2 + lw / 2, ly + 64);
   // pie en cada página
   for (let p = 0; p <= pg; p++) { const b = (p + 1) * H;
-    c.fillStyle = '#1F2328'; c.fillRect(0, b - 90, W, 90);
+    c.fillStyle = '#053F18'; c.fillRect(0, b - 90, W, 90);
     c.textAlign = 'center'; c.fillStyle = '#C9CDD2'; c.font = `19px ${sans}`; c.fillText('Documento generado por el sistema de capacitaciones OYM Center · Validación: ' + APP_URL.replace(/^https?:\/\//, '') + '?validar=' + D.code + (pg ? '  ·  Página ' + (p + 1) + ' de ' + (pg + 1) : ''), W / 2, b - 38); }
   c.textAlign = 'left';
   let out = cv;
@@ -6013,15 +6013,15 @@ function diplomaCanvas(o){
   c.fillStyle='#FFFDF6'; c.fillRect(0,0,Wd,Ht);
   // marco
   c.fillStyle='#1F2328'; c.fillRect(0,0,Wd,34); c.fillRect(0,Ht-34,Wd,34); c.fillRect(0,0,34,Ht); c.fillRect(Wd-34,0,34,Ht);
-  c.strokeStyle='#FFC20E'; c.lineWidth=6; c.strokeRect(62,62,Wd-124,Ht-124);
+  c.strokeStyle='#8DC63F'; c.lineWidth=6; c.strokeRect(62,62,Wd-124,Ht-124);
   c.strokeStyle='#E7D9B0'; c.lineWidth=2; c.strokeRect(80,80,Wd-160,Ht-160);
-  [[34,34,1,1],[Wd-34,34,-1,1],[34,Ht-34,1,-1],[Wd-34,Ht-34,-1,-1]].forEach(([x,y,sx,sy])=>{ c.fillStyle='#FFC20E'; c.beginPath(); c.moveTo(x,y); c.lineTo(x+150*sx,y); c.lineTo(x,y+150*sy); c.closePath(); c.fill(); c.fillStyle='#1F2328'; c.beginPath(); c.moveTo(x,y); c.lineTo(x+90*sx,y); c.lineTo(x,y+90*sy); c.closePath(); c.fill(); });
+  [[34,34,1,1],[Wd-34,34,-1,1],[34,Ht-34,1,-1],[Wd-34,Ht-34,-1,-1]].forEach(([x,y,sx,sy])=>{ c.fillStyle='#8DC63F'; c.beginPath(); c.moveTo(x,y); c.lineTo(x+150*sx,y); c.lineTo(x,y+150*sy); c.closePath(); c.fill(); c.fillStyle='#1F2328'; c.beginPath(); c.moveTo(x,y); c.lineTo(x+90*sx,y); c.lineTo(x,y+90*sy); c.closePath(); c.fill(); });
   // marca de agua casco
   c.save(); c.globalAlpha=.05; c.fillStyle='#1F2328'; c.beginPath(); c.arc(Wd/2,820,330,Math.PI,0); c.fill(); c.fillRect(Wd/2-400,800,800,50); c.restore();
   const center=(t,y,font,color)=>{ c.font=font; c.fillStyle=color; c.textAlign='center'; c.fillText(t,Wd/2,y); };
   c.save(); c.font=`bold 28px ${sans}`; c.fillStyle='#8A7A4A'; c.textAlign='center'; if('letterSpacing' in c) c.letterSpacing='8px'; c.fillText('OYM CENTER  ·  PROGRAMA DE CAPACITACIÓN EN SEGURIDAD '+d.getFullYear(),Wd/2,190); c.restore();
   center(o.titulo,330,`bold 150px ${serif}`,'#1F2328');
-  c.fillStyle='#FFC20E'; c.fillRect(Wd/2-170,365,340,8);
+  c.fillStyle='#8DC63F'; c.fillRect(Wd/2-170,365,340,8);
   center(o.otorga,460,`italic 42px ${serif}`,'#5A5F66');
   let fs=96; c.font=`bold ${fs}px ${serif}`; while(c.measureText(o.name).width>1500 && fs>50){ fs-=4; c.font=`bold ${fs}px ${serif}`; }
   center(o.name,580,`bold ${fs}px ${serif}`,'#0D2B6B');
@@ -6046,10 +6046,10 @@ function diplomaCanvas(o){
   const q=qrCanvas(valUrl(o.code),170); c.fillStyle='#fff'; c.fillRect(105,975,190,190); c.drawImage(q,115,985,170,170);
   c.fillStyle='#5A5F66'; c.font=`bold 18px ${sans}`; c.fillText('Escanea para validar',200,1190);
   // sello
-  const sx=1760, sy=1110; c.fillStyle='#FFC20E'; c.beginPath(); for(let i=0;i<48;i++){ const a=i/48*Math.PI*2, r=i%2?118:132; c.lineTo(sx+r*Math.cos(a), sy+r*Math.sin(a)); } c.closePath(); c.fill();
+  const sx=1760, sy=1110; c.fillStyle='#8DC63F'; c.beginPath(); for(let i=0;i<48;i++){ const a=i/48*Math.PI*2, r=i%2?118:132; c.lineTo(sx+r*Math.cos(a), sy+r*Math.sin(a)); } c.closePath(); c.fill();
   c.fillStyle='#1F2328'; c.beginPath(); c.arc(sx,sy,100,0,Math.PI*2); c.fill();
-  c.strokeStyle='#FFC20E'; c.lineWidth=3; c.beginPath(); c.arc(sx,sy,88,0,Math.PI*2); c.stroke();
-  c.fillStyle='#FFC20E'; c.font=`bold 22px ${sans}`; c.fillText(o.sello[0],sx,sy-38); c.fillStyle='#fff'; c.font=`bold 66px ${serif}`; c.fillText(o.sello[1],sx,sy+30); c.font=`bold 20px ${sans}`; c.fillStyle='#FFC20E'; c.fillText(o.sello[2],sx,sy+62);
+  c.strokeStyle='#8DC63F'; c.lineWidth=3; c.beginPath(); c.arc(sx,sy,88,0,Math.PI*2); c.stroke();
+  c.fillStyle='#8DC63F'; c.font=`bold 22px ${sans}`; c.fillText(o.sello[0],sx,sy-38); c.fillStyle='#fff'; c.font=`bold 66px ${serif}`; c.fillText(o.sello[1],sx,sy+30); c.font=`bold 20px ${sans}`; c.fillStyle='#8DC63F'; c.fillText(o.sello[2],sx,sy+62);
   c.font=`22px "Courier New", monospace`; c.fillStyle='#8A8F96'; c.fillText(o.foot,Wd/2,Ht-112);
   return cv;
 }
@@ -6226,14 +6226,14 @@ function ds44Detail(D) {
   const W = 1654, H = 2339, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const c = cv.getContext('2d');
   const sans = 'Arial, Helvetica, sans-serif', L = 100, R = W - 100, Wt = R - L;
   c.fillStyle = '#fff'; c.fillRect(0, 0, W, H);
-  c.fillStyle = '#1F2328'; c.fillRect(0, 0, W, 200); c.fillStyle = '#FFC20E'; c.fillRect(0, 200, W, 10);
-  c.textAlign = 'left'; c.fillStyle = '#FFC20E'; c.font = `bold 25px ${sans}`; c.fillText('OYM CENTER  ·  CAPACITACIÓN EN SEGURIDAD Y SALUD EN EL TRABAJO', L, 66);
+  c.fillStyle = '#053F18'; c.fillRect(0, 0, W, 200); c.fillStyle = '#8DC63F'; c.fillRect(0, 200, W, 10);
+  c.textAlign = 'left'; c.fillStyle = '#8DC63F'; c.font = `bold 25px ${sans}`; c.fillText('OYM CENTER  ·  CAPACITACIÓN EN SEGURIDAD Y SALUD EN EL TRABAJO', L, 66);
   c.fillStyle = '#fff'; c.font = `bold 54px ${sans}`; c.fillText(D.titulo, L, 132);
   c.fillStyle = '#C9CDD2'; c.font = `23px ${sans}`; c.fillText('Curso de 8 horas · DS 44/2023 art. 16 · Guía Técnica Res. Ex. N° 1.117/2026', L, 174);
-  c.textAlign = 'right'; c.fillStyle = '#FFC20E'; c.font = `bold 25px "Courier New", monospace`; c.fillText(D.code, R, 66); c.textAlign = 'left';
+  c.textAlign = 'right'; c.fillStyle = '#8DC63F'; c.font = `bold 25px "Courier New", monospace`; c.fillText(D.code, R, 66); c.textAlign = 'left';
   let y = 258;
   const wrap = (txt, x, maxW, lh, font, color) => { c.font = font; c.fillStyle = color; let line = ''; for (const w of String(txt).split(' ')) { const t = line ? line + ' ' + w : w; if (c.measureText(t).width > maxW && line) { c.fillText(line, x, y); y += lh; line = w; } else line = t; } if (line) { c.fillText(line, x, y); y += lh; } };
-  const section = (num, title) => { y += 6; c.fillStyle = '#FFC20E'; c.fillRect(L, y - 24, 7, 32); c.fillStyle = '#1F2328'; c.font = `bold 26px ${sans}`; c.fillText(num + '. ' + title, L + 20, y); y += 14; c.fillStyle = '#E5E7EB'; c.fillRect(L, y, Wt, 2); y += 30; };
+  const section = (num, title) => { y += 6; c.fillStyle = '#8DC63F'; c.fillRect(L, y - 24, 7, 32); c.fillStyle = '#1F2328'; c.font = `bold 26px ${sans}`; c.fillText(num + '. ' + title, L + 20, y); y += 14; c.fillStyle = '#E5E7EB'; c.fillRect(L, y, Wt, 2); y += 30; };
   section(1, 'Identificación');
   [['Participante', D.name], ['RUT', D.rut], ['Empresa', razonTxt(st.persona ? st.persona.empresa : '')], ['Período del curso', D.ini + ' al ' + D.fin + ' (dentro del plazo de 1 mes)'],
    ['Duración total', DS44_TOTAL + ' minutos (8 horas cronológicas) en 6 módulos'], ['Vigencia', 'Hasta el ' + D.vence + ' (2 años desde el término)'],
@@ -6244,7 +6244,7 @@ function ds44Detail(D) {
   wrap('Entregar a la persona trabajadora los conocimientos mínimos para desempeñarse de forma segura: el marco legal de la seguridad y salud en el trabajo, la identificación de peligros y evaluación de riesgos de su puesto, los efectos en la salud, las medidas preventivas y el uso del EPP, la respuesta ante emergencias y desastres, la señalización y la prevención de incendios.', L, Wt, 27, `20px ${sans}`, '#30363D');
   section(3, 'Módulos realizados');
   const cols = [L, L + 50, L + 520, L + 1020, L + 1140, L + 1300];
-  c.fillStyle = '#1F2328'; c.fillRect(L, y - 26, Wt, 38); c.fillStyle = '#FFC20E'; c.font = `bold 18px ${sans}`;
+  c.fillStyle = '#053F18'; c.fillRect(L, y - 26, Wt, 38); c.fillStyle = '#8DC63F'; c.font = `bold 18px ${sans}`;
   ['N°', 'Módulo', 'Contenido mínimo (Guía Técnica)', 'Duración', 'Fecha', 'Evaluación'].forEach((t, i) => c.fillText(t, cols[i] + 8, y)); y += 38;
   DS44.modulos.forEach((m, i) => { const r = D.mods.find(x => x.id === m.id) || {}; const y0 = y; if (i % 2 === 0) { c.fillStyle = '#F6F7F8'; c.fillRect(L, y - 24, Wt, 62); }
     c.fillStyle = '#1565C0'; c.font = `bold 20px ${sans}`; c.fillText(String(i + 1), cols[0] + 12, y);
@@ -6578,7 +6578,7 @@ function enlazarAvance() {
 }
 (function () {
   const css = `
-.nivel { display:flex; align-items:center; gap:12px; border-radius:14px; padding:8px 12px 8px 6px; background:#F3F6FB; }
+.nivel { display:flex; align-items:center; gap:12px; border-radius:14px; padding:8px 12px 8px 6px; background:#F3F8F4; }
 .nivel .cara { width:84px; height:84px; flex:none; overflow:visible; }
 .nivel .nvt { display:flex; flex-direction:column; gap:2px; } .nivel .nvt small { font-size:10px; letter-spacing:2px; color:#6B7280; font-weight:bold; }
 .nivel .nvt b { font-size:18px; line-height:1.15; } .nivel .nvt span { font-size:13px; color:#4A5568; line-height:1.3; }
@@ -6598,7 +6598,7 @@ function enlazarAvance() {
 .pvac { font-size:13px; color:#6B7280; } .falta { font-size:13px; color:#1F2328; background:#FFF6D6; border-radius:10px; padding:8px 10px; font-weight:bold; }
 .como { font-size:12px; color:#4A5568; } .como summary { cursor:pointer; color:#1565C0; font-weight:bold; }
 .tcard { position:relative; } .tcard .tb { position:absolute; top:8px; left:8px; z-index:2; font-size:11px; font-weight:bold; padding:4px 8px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.25); }
-.tb.pend { background:#FFC20E; color:#1F2328; } .tb.atr { background:#C62828; color:#fff; } .tb.mes { background:rgba(255,255,255,.92); color:#4A5568; }
+.tb.pend { background:#8DC63F; color:#1F2328; } .tb.atr { background:#C62828; color:#fff; } .tb.mes { background:rgba(255,255,255,.92); color:#4A5568; }
 .psub { font-size:12px; color:#6B7280; margin:-2px 0 8px; } .prow .tu { font-style:normal; color:#B45309; font-size:12px; }
 .tcard .tt .tb { position:static; display:block; width:fit-content; margin-top:7px; box-shadow:none; font-size:12px; }
 .tb.mes { border:1px solid #CBD5E1; }
@@ -6610,10 +6610,10 @@ function enlazarAvance() {
 // ===== OYM Center: temas por sección, "Mi ruta" según el cargo, razón social y sucursal =====
 ['ruido', 'maquinas', 'polvo', 'tmert'].forEach(id => { const i = TOPICS.findIndex(t => t.id === id); if (i >= 0) TOPICS.splice(i, 1); });
 const SECCIONES = [
-  { id: 'todos', t: 'Para todos', ic: '⭐', c: '#0039A6', d: 'Lo que todo el equipo debe saber' },
-  { id: 'conductores', t: 'Exclusivo conductores', ic: '🚚', c: '#DC281D', d: 'Camiones chicos, medianos y grandes' },
+  { id: 'todos', t: 'Para todos', ic: '⭐', c: '#0B7A35', d: 'Lo que todo el equipo debe saber' },
+  { id: 'conductores', t: 'Exclusivo conductores', ic: '🚚', c: '#E0301E', d: 'Camiones chicos, medianos y grandes' },
   { id: 'grua', t: 'Exclusivo grúa horquilla', ic: '🏗️', c: '#E69500', d: 'Operación, peatones y revisión pre-uso' },
-  { id: 'bodega', t: 'Bodega, patio y carga', ic: '📦', c: '#2E7D32', d: 'Racks, altura, herramientas y químicos' },
+  { id: 'bodega', t: 'Bodega, patio y carga', ic: '📦', c: '#6D4C41', d: 'Racks, altura, herramientas y químicos' },
   { id: 'ventas', t: 'Sala de ventas y público', ic: '🛒', c: '#7B1FA2', d: 'Clientes, asaltos y seguridad en sala' },
   { id: 'admin', t: 'Administración y oficina', ic: '💻', c: '#00838F', d: 'Computador, ergonomía y oficina' }];
 const SEC = id => SECCIONES.find(s => s.id === id) || SECCIONES[0];
@@ -6758,19 +6758,19 @@ function prepInduccion() {
   const b = $('bDS44'); if (b) b.onclick = () => openDS44();
   const css = document.createElement('style');
   css.textContent = `#indModal { display:none; position:fixed; inset:0; background:rgba(10,20,50,.7); z-index:9999; align-items:center; justify-content:center; padding:18px; }
-#indModal.on { display:flex; } #indModal .imbox { background:#fff; color:#1F2328; border-radius:18px; padding:22px; max-width:380px; width:100%; display:flex; flex-direction:column; gap:12px; text-align:center; border-top:8px solid #DC281D; }
+#indModal.on { display:flex; } #indModal .imbox { background:#fff; color:#1F2328; border-radius:18px; padding:22px; max-width:380px; width:100%; display:flex; flex-direction:column; gap:12px; text-align:center; border-top:8px solid #E0301E; }
 #indModal .imic { font-size:44px; } #indModal h3 { margin:0; font-size:22px; } #indModal p { color:#30363D; margin:0; }
 .indbtn { display:flex !important; align-items:center; gap:10px; } .indbtn small { display:block; font-weight:normal; opacity:.85; font-size:12px; }
 .mano { font-size:26px; display:inline-block; animation: manoTap 1s ease-in-out infinite; } @keyframes manoTap { 0%,100% { transform:translateX(0) } 50% { transform:translateX(6px) } }
-.indtit { font-weight:bold; color:#0039A6; font-size:14px; }
+.indtit { font-weight:bold; color:#0B7A35; font-size:14px; }
 .ctrl { background:#2E7D32; color:#fff; font-weight:bold; padding:1px 6px; border-radius:6px; white-space:nowrap; } .prohib { color:#C62828; }
-.indlinks { display:flex; flex-direction:column; gap:8px; margin-top:10px; } .indbtn { display:block; background:#0039A6; color:#fff !important; text-decoration:none; padding:10px 12px; border-radius:10px; font-weight:bold; font-size:14px; }
-.tcard.bloq svg { filter:grayscale(1); opacity:.45; } .tb.lock { background:#37474F; color:#fff; } .tb.star { background:#DC281D; color:#fff; font-size:12px; }`;
+.indlinks { display:flex; flex-direction:column; gap:8px; margin-top:10px; } .indbtn { display:block; background:#0B7A35; color:#fff !important; text-decoration:none; padding:10px 12px; border-radius:10px; font-weight:bold; font-size:14px; }
+.tcard.bloq svg { filter:grayscale(1); opacity:.45; } .tb.lock { background:#37474F; color:#fff; } .tb.star { background:#E0301E; color:#fff; font-size:12px; }`;
   document.head.appendChild(css);
 })();
 
 // aviso flotante breve (cargando perfil)
-function aviso(txt) { let a = document.getElementById('avisoTop'); if (!a) { a = document.createElement('div'); a.id = 'avisoTop'; a.style.cssText = 'position:fixed;left:50%;top:14px;transform:translateX(-50%);background:#0039A6;color:#fff;padding:10px 16px;border-radius:12px;font-weight:bold;z-index:10000;box-shadow:0 6px 20px rgba(0,0,0,.25)'; document.body.appendChild(a); }
+function aviso(txt) { let a = document.getElementById('avisoTop'); if (!a) { a = document.createElement('div'); a.id = 'avisoTop'; a.style.cssText = 'position:fixed;left:50%;top:14px;transform:translateX(-50%);background:#0B7A35;color:#fff;padding:10px 16px;border-radius:12px;font-weight:bold;z-index:10000;box-shadow:0 6px 20px rgba(0,0,0,.25)'; document.body.appendChild(a); }
   a.textContent = txt; a.style.display = txt ? 'block' : 'none'; }
 
 // ===== Ingreso de jefaturas: mismo RUT y misma clave del trabajador (el panel reconoce la sesión abierta)
@@ -6788,7 +6788,7 @@ function aviso(txt) { let a = document.getElementById('avisoTop'); if (!a) { a =
 function verHistorial() {
   let m = $('histModal'); if (!m) { m = document.createElement('div'); m.id = 'histModal'; m.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(10,20,50,.72);z-index:9999;align-items:center;justify-content:center;padding:16px'; document.body.appendChild(m); m.onclick = e => { if (e.target === m) m.style.display = 'none'; }; }
   const H = (RUTA && RUTA.hist) || [], hoy = Date.now();
-  m.innerHTML = `<div style="background:#fff;color:#1F2328;border-radius:18px;padding:18px;max-width:440px;width:100%;max-height:88vh;overflow:auto;border-top:8px solid #0039A6">
+  m.innerHTML = `<div style="background:#fff;color:#1F2328;border-radius:18px;padding:18px;max-width:440px;width:100%;max-height:88vh;overflow:auto;border-top:8px solid #0B7A35">
     <h3 style="margin:0 0 4px">📜 Mi historial</h3><p style="margin:0 0 10px;color:#5A5F66;font-size:13px">Todas tus capacitaciones aprobadas. Cada charla vale 12 meses (la Inducción 18); al vencer vuelve a tu plan, pero aquí queda el registro.</p>
     ${H.map(x => { const v = venceAprob(x.id, x.f), ok = !v || v > hoy;
       return `<div style="display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #E5E7EB"><div style="flex:1"><b style="font-size:14px">${x.t}</b><div style="font-size:12px;color:#5A5F66">${x.f} · nota ${x.n} · <a href="#" data-c="${x.c}">${x.c}</a></div></div>
@@ -6812,7 +6812,7 @@ function cerrarSesion() { RUTA = null; st.persona = null; try { localStorage.rem
 function cambiarMiClave() {
   let m = $('claveModal'); if (!m) { m = document.createElement('div'); m.id = 'claveModal'; m.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(10,20,50,.72);z-index:9999;align-items:center;justify-content:center;padding:16px'; document.body.appendChild(m); }
   const inp = 'width:100%;box-sizing:border-box;padding:12px;border-radius:10px;border:2px solid #CFD8DC;font-size:16px;font-family:inherit';
-  m.innerHTML = `<form onsubmit="return false" style="background:#fff;color:#1F2328;border-radius:18px;padding:20px;max-width:380px;width:100%;display:flex;flex-direction:column;gap:10px;border-top:8px solid #0039A6">
+  m.innerHTML = `<form onsubmit="return false" style="background:#fff;color:#1F2328;border-radius:18px;padding:20px;max-width:380px;width:100%;display:flex;flex-direction:column;gap:10px;border-top:8px solid #0B7A35">
     <h3 style="margin:0">🔑 Cambiar mi clave</h3><p style="margin:0;color:#5A5F66;font-size:13px">La nueva clave debe tener al menos 6 caracteres, con letras y números.</p>
     <input name="username" value="${RUTA.rut}" autocomplete="username" hidden>
     <input id="cA" type="password" autocomplete="current-password" placeholder="Clave actual" style="${inp}">

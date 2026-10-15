@@ -2,7 +2,7 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Panel de Prevención · OYM Center</title><meta name="robots" content="noindex">
 <style>
-:root { --az:#0039A6; --rj:#DC281D; --am:#FFC20E; --vd:#2E7D32; --tx:#1F2328; --mu:#6B7280; --bg:#EEF2F7; --ln:#E2E8F0; }
+:root { --az:#0B7A35; --rj:#E0301E; --am:#8DC63F; --vd:#2E7D32; --tx:#1F2328; --mu:#6B7280; --bg:#EEF2F7; --ln:#E2E8F0; }
 * { box-sizing:border-box; } body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--tx); }
 button, input, select, textarea { font:inherit; }
 .top { background:#fff; border-bottom:4px solid var(--rj); padding:10px 16px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; position:sticky; top:0; z-index:5; }
@@ -20,7 +20,7 @@ td { padding:8px 6px; border-bottom:1px solid var(--ln); vertical-align:middle; 
 .bar { height:8px; background:var(--ln); border-radius:99px; overflow:hidden; min-width:70px; } .bar i { display:block; height:100%; border-radius:99px; }
 .pc { font-weight:bold; }
 .filtros { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; align-items:center; }
-.chip { border:2px solid var(--ln); background:#fff; border-radius:999px; padding:6px 12px; cursor:pointer; font-size:13px; } .chip.on { border-color:var(--az); background:#E3ECFA; color:var(--az); font-weight:bold; }
+.chip { border:2px solid var(--ln); background:#fff; border-radius:999px; padding:6px 12px; cursor:pointer; font-size:13px; } .chip.on { border-color:var(--az); background:#E6F4EA; color:var(--az); font-weight:bold; }
 .buscar { flex:1; min-width:180px; border:2px solid var(--ln); border-radius:10px; padding:8px 10px; } select { border:2px solid var(--ln); border-radius:10px; padding:8px; background:#fff; }
 .per { display:grid; grid-template-columns:1fr auto; gap:6px 12px; padding:10px 4px; border-bottom:1px solid var(--ln); }
 .per .nm { font-weight:bold; } .per .sb { font-size:12px; color:var(--mu); } .per .bd { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; align-items:center; }
@@ -89,7 +89,7 @@ function pintar() {
 function vResumen(T) {
   const P = D.personas, R = D.reportes, sucs = [...new Set(P.map(p => p.s || '(sin sucursal)'))].sort();
   const k = (t, v, s, c) => `<div class="kpi" style="border-color:${c}"><small>${t}</small><b style="color:${c}">${v}</b><span>${s}</span></div>`;
-  let h = `<div class="kpis">${k('Trabajadores', T.n, 'activos en la nómina', '#0039A6')}${k('Cumplimiento a la fecha', fp(T.aFecha), 'charlas que ya debían estar hechas', col(T.aFecha))}
+  let h = `<div class="kpis">${k('Trabajadores', T.n, 'activos en la nómina', '#0B7A35')}${k('Cumplimiento a la fecha', fp(T.aFecha), 'charlas que ya debían estar hechas', col(T.aFecha))}
     ${k('Avance del programa', fp(T.anual), 'todas las charlas obligatorias', col(T.anual))}${k('Inducción vigente', T.ind + ' / ' + T.n, T.sinInd + ' sin inducción', col(pct(T.ind, T.n)))}
     ${k('Curso DS 44', T.ds + ' / ' + T.n, 'con certificado vigente', col(pct(T.ds, T.n)))}${D.reportes.length ? k('Reportes abiertos', T.rep, 'condiciones o acciones inseguras', T.rep ? '#C62828' : '#2E7D32') : ''}</div>`;
   h += `<div class="card"><h3>📍 POR SUCURSAL</h3><table><tr><th>Sucursal</th><th class="num">Personas</th><th class="num ocm">Sin inducción</th><th>A la fecha</th><th class="ocm">Avance</th><th class="num">Reportes</th></tr>${sucs.map(s => {
